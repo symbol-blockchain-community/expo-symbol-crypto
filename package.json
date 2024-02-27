@@ -1,0 +1,47 @@
+{
+  "name": "@symbol-blockchain-community/expo-symbol-crypto",
+  "version": "0.0.1",
+  "description": "symbol crypto modules for expo managed react native.",
+  "main": "./dist/cjs/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "module": "./dist/esm/index.js",
+  "private": false,
+  "author": "ym.u.ichiro@gmail.com",
+  "homepage": "https://symbol-community.com",
+  "license": "MIT",
+  "repository": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build": "npm run build:cjs && npm run build:esm"
+  },
+  "keywords": [
+    "symbol",
+    "xym",
+    "nem",
+    "crypto",
+    "expo",
+    "expo-crypto",
+    "expo-symbol-crypto"
+  ],
+  "files": [
+    "dist",
+    "README.md",
+    "package.json",
+    "package-lock.json",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "create-hmac": "^1.1.7",
+    "crypto-browserify": "^3.12.0",
+    "expo-crypto": "^12.6.0",
+    "expo-modules-core": "^1.5.12"
+  },
+  "devDependencies": {
+    "@types/create-hmac": "^1.1.3",
+    "typescript": "^5.3.3"
+  }
+}
