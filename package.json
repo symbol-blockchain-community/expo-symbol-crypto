@@ -1,6 +1,6 @@
 {
   "name": "@symbol-blockchain-community/expo-symbol-crypto",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "symbol crypto modules for expo managed react native.",
   "main": "./dist/cjs/index.js",
   "types": "./dist/esm/index.d.ts",
@@ -9,13 +9,14 @@
   "author": "ym.u.ichiro@gmail.com",
   "homepage": "https://symbol-community.com",
   "license": "MIT",
-  "repository": {},
+  "repository": {
+    "url": "https://github.com/Symbol-Blockchain-Community/expo-symbol-crypto"
+  },
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
     "build:cjs": "tsc -p tsconfig.cjs.json",
-    "build:esm": "tsc -p tsconfig.esm.json",
     "build": "npm run build:cjs && npm run build:esm"
   },
   "keywords": [

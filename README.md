@@ -22,7 +22,7 @@ A crypto alternative package for running symbol-sdk on Expo managed React Native
 
 ```
 npx create-expo-app my-app
-npm install symbol-sdk@2 buffer events readable-stream expo-symbol-crypto
+npm install symbol-sdk@2 buffer events readable-stream @symbol-blockchain-community/expo-symbol-crypto
 ```
 
 ```javascript
@@ -33,7 +33,7 @@ const config = {
   ...getDefaultConfig(__dirname),
   resolver: {
     extraNodeModules: {
-      crypto: require.resolve("expo-symbol-crypto"),
+      crypto: require.resolve("@symbol-blockchain-community/expo-symbol-crypto"),
       stream: require.resolve("readable-stream"),
       buffer: require.resolve("buffer"),
       events: require.resolve("events"),
