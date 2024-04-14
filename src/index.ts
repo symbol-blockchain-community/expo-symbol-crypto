@@ -9,7 +9,7 @@ export function randomBytes(num: number): IntBasedTypedArray | UintBasedTypedArr
 }
 
 export function createHash(algorithm: CryptoDigestAlgorithm): any {
-  throw new Error(`createHash is not defined ${algorithm}`);
+  return cryptobrowserify.createHash(algorithm);
 }
 
 export function createHmac(algorithm: hmac.Algorithm, data: string | Buffer) {
@@ -23,3 +23,12 @@ export function createCipheriv(algorithm: any, key: any, iv: any, options?: any)
 export function createDecipheriv(algorithm: any, key: any, iv: any, options?: any) {
   return cryptobrowserify.createDecipheriv(algorithm, key, iv, options);
 }
+
+// default export
+export default {
+  randomBytes,
+  createHash,
+  createHmac,
+  createCipheriv,
+  createDecipheriv,
+};
