@@ -1,6 +1,6 @@
 {
   "name": "@symbol-blockchain-community/expo-symbol-crypto",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "symbol crypto modules for expo managed react native.",
   "main": "./dist/cjs/index.js",
   "types": "./dist/esm/index.d.ts",

@@ -12,8 +12,14 @@ export function createHash(algorithm: CryptoDigestAlgorithm): any {
   return cryptobrowserify.createHash(algorithm);
 }
 
-export function createHmac(algorithm: hmac.Algorithm, data: string | Buffer) {
-  return hmac(algorithm, data);
+/** NOTE: symbol-sdk v3 では ArrayBuffer, Uint8Array でも渡されるケースがある為、hmac に対応させる為に変換処理を追加 */
+export function createHmac(algorithm: hmac.Algorithm, data: string | Buffer | ArrayBuffer | Uint8Array) {
+  if (data instanceof ArrayBuffer) {
+    data = Buffer.from(data);
+  } else if (data instanceof Uint8Array) {
+    data = Buffer.from(data);
+  }
+  return hmac(algorithm, data as string | Buffer);
 }
 
 export function createCipheriv(algorithm: any, key: any, iv: any, options?: any) {
