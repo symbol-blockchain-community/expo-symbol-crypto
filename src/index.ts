@@ -32,6 +32,7 @@ export function createDecipheriv(algorithm: any, key: any, iv: any, options?: an
 
 // default export
 export default {
+  ExpoCrypto,
   randomBytes,
   createHash,
   createHmac,

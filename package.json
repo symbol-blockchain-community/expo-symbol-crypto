@@ -1,6 +1,6 @@
 {
   "name": "@symbol-blockchain-community/expo-symbol-crypto",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "symbol crypto modules for expo managed react native.",
   "main": "./dist/cjs/index.js",
   "types": "./dist/esm/index.d.ts",
@@ -39,8 +39,8 @@
   "dependencies": {
     "create-hmac": "^1.1.7",
     "crypto-browserify": "^3.12.0",
-    "expo-crypto": "^12.6.0",
-    "expo-modules-core": "^1.5.12"
+    "expo-crypto": "^13.0.2",
+    "expo-modules-core": "^1.12.18"
   },
   "devDependencies": {
     "@types/create-hmac": "^1.1.3",
